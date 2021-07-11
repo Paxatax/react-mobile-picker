@@ -75,7 +75,7 @@ class PickerColumn extends Component {
       "touchmove",
       "wheel",
     ];
-    if (!passiveEvents.includes(event._reactName)) {
+    if (passiveEvents.includes(event._reactName)) {
       event.preventDefault();
     }
   };
