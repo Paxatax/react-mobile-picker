@@ -69,11 +69,11 @@ class PickerColumn extends Component {
   safePreventDefault = (event) => {
     console.log("MOBILE PICKER EVENT", event);
     const passiveEvents = [
-      "touchstart",
-      "touchend",
-      "touchcancel",
-      "touchmove",
-      "wheel",
+      "onTouchStart",
+      "onTouchEnd",
+      "onTouchCancel",
+      "onTouchMove",
+      "onWheel",
     ];
     if (passiveEvents.includes(event._reactName)) {
       event.preventDefault();
