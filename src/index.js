@@ -67,6 +67,7 @@ class PickerColumn extends Component {
   };
 
   safePreventDefault = (event) => {
+    console.log("MOBILE PICKER EVENT", event);
     const passiveEvents = [
       "touchstart",
       "touchend",
